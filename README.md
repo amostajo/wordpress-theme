@@ -1,4 +1,4 @@
-# WORDPRESS THEME (Template)
+# WORDPRESS THEME TEMPLATE
 --------------------------------
 
 [![Latest Stable Version](https://poser.pugx.org/amostajo/wordpress-theme/v/stable)](https://packagist.org/packages/amostajo/wordpress-theme)
