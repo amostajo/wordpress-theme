@@ -25,6 +25,8 @@ The following video tutorial from **Wordpress PLUGIN** can be applied to this th
         - [Functions](#functions)
         - [Full MVC](#full-mvc)
     - [Config](#config)
+    - [Add-ons](#add-ons)
+- [Change Log](#change-log)
 - [Coding Guidelines](#coding-guidelines)
 - [License](#license)
 
