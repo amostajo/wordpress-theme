@@ -354,7 +354,7 @@ class Main extends Theme
 
 ```php
 	// In config\theme.php
-	
+
 	'myapi' => array(
 		'key' => 'jdsldjsfl12938nfk',
 	),
@@ -375,6 +375,27 @@ class Main extends Theme
 	}
 }
 ```
+
+### Add-ons
+
+WPP now supports **Addons** or external **Packages** developed using WP code.
+
+Add your add-ons at the config file, like:
+
+```php
+	// In config\theme.php
+
+	'addons' => [
+        'SpecialAddonNamespace\AddonClass',
+        'PackageAddon\AddonClass',
+    ],
+```
+
+For more information about add-on development, click [here](https://github.com/amostajo/wordpress-plugin-core).
+
+## Change Log
+
+For version upgrades and change log, click [here](https://github.com/amostajo/wordpress-theme/releases).
 
 ## Coding Guidelines
 

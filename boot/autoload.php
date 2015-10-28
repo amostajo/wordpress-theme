@@ -15,12 +15,12 @@ $theme_class = $theme_namespace . '\Main';
 $theme = new $theme_class( new Amostajo\WPPluginCore\Config( $config ) );
 
 //--- INIT
-$theme->init();
+$theme->autoload_init();
 
 //--- ON ADMIN
 if ( is_admin() ) {
 
-	$theme->on_admin();
+	$theme->autoload_on_admin();
 
 }
 
