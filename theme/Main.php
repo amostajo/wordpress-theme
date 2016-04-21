@@ -5,32 +5,40 @@ namespace Theme;
 use Amostajo\WPPluginCore\Plugin as Theme;
 
 /**
- * Configuration class.
- * Registers HOOKS and FILTERS used within the theme.
- * Acts like a bridge or router of actions between Wordpress and the theme.
+ * Main class.
+ * Registers HOOKS used within the plugin.
+ * Acts like a bridge or router of actions between Wordpress and the plugin.
+ *
+ * @link http://wordpress-dev.evopiru.com/documentation/main-class/
+ * @version 1.0
  */
 class Main extends Theme
 {
 	/**
-	 * Constructor.
-	 * Declares HOOKS and FILTERS.
+	 * Declares public HOOKS.
+	 * - Can be removed if not used.
+	 * @since 1.0
 	 */
 	public function init()
 	{
-		// Call public Wordpress HOOKS and FILTERS here
-		// --------------------------------------------
 		// i.e.
-		// add_action( 'save_post', array( &$this, 'save_post' ) );
+		// add_action( 'save_post', [ &$this, 'save_post' ] );
+		// 
+		// $this->add_action( 'save_post', 'PostController@save' );
+		// 
+		// $this->add_shortcode( 'hello_world', 'view@shout', [ 'message' => 'Hello World!' ] );
 	}
 
 	/**
-	 * Declares HOOKS and FILTERS when on admin dashboard.
+	 * Declares admin dashboard HOOKS.
+	 * - Can be removed if not used.
+	 * @since 1.0
 	 */
 	public function on_admin()
 	{
-		// Call public Wordpress HOOKS and FILTERS here
-		// --------------------------------------------
 		// i.e.
-		// add_action( 'admin_init', array( &$this, 'admin_init' ) );
+		// add_action( 'admin_init', [ &$this, 'admin_init' ] );
+		// 
+		// $this->add_action( 'admin_init', 'AdminController@init' );
 	}
 }
